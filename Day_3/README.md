@@ -1,4 +1,4 @@
-# Day 3 – Report Agent Lab
+# Day 3 – Multi Agent Lab
 
 This repository contains the Day 3 lab for the Advanced Agentic AI Systems Engineering program.
 
