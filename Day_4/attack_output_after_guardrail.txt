@@ -1,0 +1,65 @@
+
+=== GRAPH DIAGRAM ===
+
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	security_guard(security_guard)
+	blocked(blocked)
+	collect(collect)
+	store_memory(store_memory)
+	analyze(analyze)
+	evaluate(evaluate)
+	report_agent(report_agent)
+	audit(audit)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> security_guard;
+	analyze --> evaluate;
+	collect --> store_memory;
+	evaluate -.-> collect;
+	evaluate -.-> report_agent;
+	report_agent --> audit;
+	security_guard -.-> blocked;
+	security_guard -. &nbsp;approved&nbsp; .-> collect;
+	store_memory --> analyze;
+	audit --> __end__;
+	blocked --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc
+
+
+=== EXECUTION STREAM ===
+
+Iteration: 0 | Score: 0/10 | Sources: 0
+Iteration: 0 | Score: 0/10 | Sources: 0
+Iteration: 0 | Score: 0/10 | Sources: 0
+
+=== SECURITY STATUS ===
+
+blocked
+
+=== SECURITY REASON ===
+
+Prompt injection or task hijacking detected: instead of research content, original poetic lines, do not include factual research findings
+
+=== FINAL REPORT ===
+
+# Security Alert
+
+The request was blocked before reaching the research agents.
+
+Reason: Prompt injection or task hijacking detected: instead of research content, original poetic lines, do not include factual research findings
+
+=== EXPORTED REPORT FILE ===
+
+No report was exported because the request was blocked.
+
+=== EXECUTION LOGS ===
+
+- [SECURITY] Request blocked — Prompt injection or task hijacking detected: instead of research content, original poetic lines, do not include factual research findings
+- [SECURITY] Secure execution boundary stopped the workflow
