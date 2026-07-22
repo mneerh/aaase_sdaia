@@ -1,6 +1,7 @@
 # ============================================================
-# DAY 2 LAB — SKELETON: Build the Research Agent Yourself
+# DAY 3 LAB — Build a Multi Agent 
 # ============================================================
+#Using Day 2 SKELETON
 # Fill in every TODO. Each step tells you exactly WHERE in the
 # LangGraph docs to look. Don't copy from the solution file
 # (enterprise_research_agent.py) until you've tried each step —
